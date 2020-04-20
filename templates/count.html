@@ -1,0 +1,15 @@
+<a href="{% url 'home'%}">go back</a>
+<h1>Your Text:</h1>
+{{intext}}<br>
+
+<h1>Word Counts:</h1>
+<h3>There are total {{total}} words in the text.</h3>
+
+<ol>
+    {% for word,count in words%}
+
+        <li>{{word}}:{{count}}</li>
+
+    {% endfor %}
+
+</ol>
